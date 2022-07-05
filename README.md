@@ -7,3 +7,6 @@
 
 ## The next step is to align the sequences of every movie review text to the same length, and we can do so by performing zero padding on short sequences or cutting out portions of long sequences. For example, if we have "This movie is great" and "I suggest not wasting your time watching this" and want the sequence length to be six, we can changed them to "null null this movie is great" and "not wasting your time watching this".
 <img width="1282" alt="Screen Shot 2022-07-04 at 11 02 40 PM" src="https://user-images.githubusercontent.com/102645083/177260038-121a8dad-185d-4c21-9b81-e5f28b36c321.png">
+
+## We then perform one-hot encoding on every word, which means if there are n amount of words, the one-hot vectors are n-dimensional.
+<img width="1133" alt="Screen Shot 2022-07-05 at 12 25 24 AM" src="https://user-images.githubusercontent.com/102645083/177273002-18694bdd-3d00-49e4-9eec-958e7d975eb1.png">
