@@ -2,5 +2,5 @@
 
 ## In this project, there will be 50,000 total movie reviews that are labeled with either "positive" or "negative", and half of them are used for training while the other half is used for testing. 
 
-## The first step is to perform Tokenization, the prcoess of breaking down a text / passage into a list of tokens.
-<img width="575" alt="Screen Shot 2022-07-04 at 8 03 07 PM" src="https://user-images.githubusercontent.com/102645083/177241166-ad8a7d76-447a-4af6-afd5-b4ee42a4320e.png">
+## The first step is to perform Tokenization, the prcoess of breaking down a text into a list of tokens. There are a couple of considerations during this process, including typos, stop words ("the", "a", "of", etc), and upper / lower case conversions. For example, "goooood" may be an verexaggerated version of "good" or "god", while "apple" is a fruit and "Apple" is a company. Tokenization may look easy, but there are a lot of work done during this process. The second step is to create a dictionary, where all the tokens are assigned to an index. It's important to note that this dictionary only keeps track of all the unique words in the text, not how many times each appeared. With this, we can use sequence of indexes to represent the text.
+<img width="1266" alt="Screen Shot 2022-07-04 at 10 52 31 PM" src="https://user-images.githubusercontent.com/102645083/177258684-df8a2a60-959a-4d89-8839-3da9a12f2aad.png">
