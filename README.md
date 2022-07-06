@@ -10,3 +10,6 @@
 
 ## We then perform one-hot encoding on every word, which means if there are n amount of words, the one-hot vectors are n-dimensional.
 <img width="1133" alt="Screen Shot 2022-07-05 at 12 25 24 AM" src="https://user-images.githubusercontent.com/102645083/177273002-18694bdd-3d00-49e4-9eec-958e7d975eb1.png">
+
+## Using all the vectors
+<img width="750" alt="Screen Shot 2022-07-05 at 12 44 36 AM" src="https://user-images.githubusercontent.com/102645083/177276592-fdc18e50-0810-49ee-a205-a19d9de24c4f.png">
