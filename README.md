@@ -1,4 +1,4 @@
-# Word-Embeddings
+# Word Embeddings and Recurrent Neural Network
 
 ## In this project, there will be 50,000 total movie reviews that are labeled with either "positive" or "negative", and half of them are used for training while the other half is used for testing. 
 
