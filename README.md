@@ -13,3 +13,7 @@
 
 ## Since each word is represented by a ridiculously long matrix, we dimensionality reduce each word (from a 5000 x 1 to a 32 x 1 matrix in the movie review example).
 <img width="750" alt="Screen Shot 2022-07-05 at 12 44 36 AM" src="https://user-images.githubusercontent.com/102645083/177276592-fdc18e50-0810-49ee-a205-a19d9de24c4f.png">
+
+## With Word Embeddings out of the way, we can now look into RNN models. Like mentioned earlier, RNN is a good way to model sequential data, which means its neural network will look slightly different that CNN's. Instead of taking in every single word in the beginning, it only takes in the first word, performs embedding on it, and is represented by a dimension reduced matrix (32-D in this project). There are 32 initial weights that can be all zeros or random numbers in a range, and 32 neurons in each layer, which means each neuron takes in a a total of 64 inputs. They each then have one output, and the 32 outputs are now the new weights and are passed on to the next layer. The outputs of the final layer is then flattened into an equation and it goes through an activation function to become the result / prediction.
+![Screen Shot 2022-07-10 at 3 10 21 PM](https://user-images.githubusercontent.com/102645083/178163841-018841e9-0a53-44bc-8d53-daa375d4a4a9.png)
+
