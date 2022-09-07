@@ -1,4 +1,4 @@
-# Word Embeddings and Recurrent Neural Network
+Recurrent Neural Network
 
 ## Recurrent Neural Networks are commonly used in speech rocognition because it has an internal memory that keeps track of previous inputs adn temporal data, which all affects the subsequent prediction. In simpler words, every word in a sentence depends on each other, and when we are getting to the last words of a sentence, the result from the previous words still must be analyzed. It's important to note that traditional RNN models are very slow and training can be difficult, and more advanced models like LSTM are used for NLP. However, it's important to understand RNN first.
 
