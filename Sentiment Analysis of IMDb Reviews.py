@@ -1,20 +1,22 @@
-# Word Embedding + Single RNN
-
 import tensorflow as tf
 from tensorflow.keras.datasets import imdb
 from tensorflow.keras.preprocessing import sequence
 from tensorflow.keras.layers import SimpleRNN, Embedding, Dense, Dropout, Flatten
 from tensorflow.keras import optimizers
 
-vocabulary_size = 5000 # 5000 unique words in the corpus
-max_words = 500 # only use 500 words from each review
-embedding_size=32 # use a 32-dimension vector to represent a word
+# collecting a total amount of 5000 words in the vocabulary sample
+vocabulary_size = 5000
+
+# limiting each review length to 500 words
+max_words = 500
+
+# use a 32-dimension vector to represent a word
+embedding_size = 32
+
 epoches = 50
 state_dim = 32
 
 (X_train, y_train), (X_test, y_test) = imdb.load_data(num_words = vocabulary_size)
-print('Loaded dataset with {} training samples, {} test samples'.format(len(X_train), len(X_test)))
-
 
 word2id = imdb.get_word_index()
 id2word = {i: word for word, i in word2id.items()}
