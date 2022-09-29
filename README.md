@@ -23,7 +23,7 @@
 
 ![Screen Shot 2022-09-07 at 8 28 57 PM](https://user-images.githubusercontent.com/102645083/189027698-871b805d-c42c-43c0-b19e-a0ea19b20307.png)
 
-The outputs of the final layer is then flattened into an equation and it goes through an activation function to become the result / prediction.
+## The outputs of the final layer is then flattened into an equation and it goes through an activation function to become the result / prediction.
 ![Screen Shot 2022-07-10 at 3 10 21 PM](https://user-images.githubusercontent.com/102645083/178163841-018841e9-0a53-44bc-8d53-daa375d4a4a9.png)
 
 ## Back-Propogation for RNN is extremely complicated, and there are many separate topics associated with it. The first topic is Vanishing & Exploding Gradient, and here is an simple example: 1.01 to the power of 1,000 is around 20,959, while 0.99 to the power of 1,000 is around 0.00004. Because we know that finding the partial derivative in respect to a weight requires multiplying the partial derivatives of components that reside later in the network due to the chain rule, this product can be indefinitely long. We might never know what all these partial derivative values are equal to, so we might end up getting a near zero number or an indefinitely large value. Earlier weights are typically subjected to this problem, because the earlier it resides in the network, the more terms are going to be included in the product that calculates the gradient, and the more of these terms are less or more than one, the quicker the gradient is going to vanish or explode.
