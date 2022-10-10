@@ -20,10 +20,6 @@ state_dim = 32
 
 word2id = imdb.get_word_index()
 id2word = {i: word for word, i in word2id.items()}
-print('---review with words---')
-print([id2word.get(i, ' ') for i in X_train[6]])
-print('---label---')
-print(y_train[6])
 
 print('Maximum review length: {}'.format(len(max((X_train + X_test), key=len))))
 print('Minimum review length: {}'.format(len(min((X_test + X_test), key=len))))
@@ -49,7 +45,6 @@ print(model.summary())
 
 X_test, y_test = X_test[:2000], y_test[:2000]
 
-#model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
 
 model.compile(loss='binary_crossentropy', optimizer=optimizers.RMSprop(lr=0.0001), metrics=['accuracy'])
 
